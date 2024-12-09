@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', serif;
+  background: url('images/background-unicorns.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Banner on top */
+.top-banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.crazy-title {
+  position: absolute;
+  bottom: 24%; /* Adjusts position relative to the banner */
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 4rem; /* Larger font size */
+  color: #000;
+  background: linear-gradient(45deg, #fbff04, #f10336, #ffffff, #2100f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px #00fff2, 0 0 20px #ff00ff, 0 0 30px #ffffff;
+  animation: dark-glow 1.5s infinite alternate;
+}
+
+/* Glowing animation */
+@keyframes dark-glow {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 20px #4b0082, 0 0 30px #000080;
+  }
+  to {
+    text-shadow: 0 0 20px #483d8b, 0 0 30px #2f4f4f, 0 0 40px #000080;
+  }
+}
+
+/* Contract Address Container */
+.contract-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between the address and the button */
+  margin-top: 10px;
+}
+
+.contract-address {
+  font-family: 'Arial', sans-serif;
+  font-size: 3rem; /* Slightly smaller than the title */
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+  padding: 5px 10px;
+  border-radius: 10px; /* Rounded edges */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Copy Button */
+.copy-button {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff9800;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #f57c00;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Coin Section */
+.coin-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+/* Coin Image */
+.coin-section img {
+  max-width: 200px;
+  border-radius: 50%;
+  border: 5px solid #ff9800;
+}
+
+/* Button Groups */
+.button-group {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased spacing between buttons */
+}
+
+.left-buttons {
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-buttons {
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Buttons */
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 30px; /* Increased padding for larger buttons */
+  font-size: 1.2rem; /* Larger font size for button text */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #ff9800;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button img {
+  width: 25px; /* Slightly larger icons */
+  height: 25px;
+  object-fit: contain;
+}
+
+.button:hover {
+  background-color: #f57c00;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}
+
+/* Story Section */
+.story-section {
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: left;
+  border-radius: 15px;
+}
+
+.story-section h1,
+.story-section h2 {
+  font-family: 'Montserrat', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.story-section p {
+  font-family: 'Montserrat', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+}
